@@ -23,7 +23,7 @@ public class Game {
     private List<Move> moves;
     private List<WinningStrategy> winningStrategies;
     private Board board;
-    public Game(int dimension,List<Player> players,List<WinningStrategy> winningStrategies) {
+    private Game(int dimension,List<Player> players,List<WinningStrategy> winningStrategies) {
         this.board = new Board(dimension);
         this.players = players;
         this.nextPlayerMoveIndex = 0;
